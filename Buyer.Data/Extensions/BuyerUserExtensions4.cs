@@ -1,4 +1,4 @@
-﻿using Buyer.Data.Models;
+﻿using Context.Models;
 
 namespace Buyer.Data.Extensions
 {

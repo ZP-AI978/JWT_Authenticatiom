@@ -1,5 +1,5 @@
-﻿using Buyer.Data.Context;
-using Buyer.Data.Models;
+﻿using Context.Context;
+using Context.Models;
 using Domain.Entitities.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;

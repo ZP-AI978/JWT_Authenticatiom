@@ -1,4 +1,4 @@
-﻿using Buyer.Data.Models;
+﻿using Context.Models;
 using Domain.Entitities.Models;
 
 namespace Buyer.Core.User.Support

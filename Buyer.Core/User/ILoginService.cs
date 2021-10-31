@@ -1,5 +1,4 @@
-﻿using Buyer.Data.Models;
-using Domain.Entitities.Models;
+﻿using Domain.Entitities.Models;
 using Domain.Entitities.Requests;
 using System.Collections.Generic;
 using System.Threading.Tasks;
