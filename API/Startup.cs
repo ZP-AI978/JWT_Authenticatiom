@@ -132,7 +132,7 @@ namespace API
 
         private TokenValidationParameters GetTokenValidationParameters()
         {
-            string strPublicKey = jwtSettings.PublicKey;
+            string strPublicKey = jwtSettings.PublicKeyXml;
             RSA publicRsa = RSA.Create();
             publicRsa.FromXmlString(strPublicKey);
 

@@ -34,7 +34,7 @@ namespace Token.Jwt
 
 				using (RSA privateRsa = RSA.Create())
 				{
-					string strPrivateKey = jwtSettings.PrivateKey;
+					string strPrivateKey = jwtSettings.PrivateKeyXml;
 					privateRsa.FromXmlString(strPrivateKey);
 
 					var privateKey = new RsaSecurityKey(privateRsa)

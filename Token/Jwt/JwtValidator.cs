@@ -21,7 +21,7 @@ namespace Token.Jwt
         public bool IsTokenValid(string token)
         {
 
-            string strPublicKey = jwtSettings.PublicKey;
+            string strPublicKey = jwtSettings.PublicKeyXml;
 
             using (RSA publicRsa = RSA.Create())
             {
