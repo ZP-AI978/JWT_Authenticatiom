@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 namespace API.Controllers
 {
     [ApiController]
+    [AllowAnonymous]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
@@ -24,6 +26,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
